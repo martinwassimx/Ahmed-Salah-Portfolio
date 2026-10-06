@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Hesham Salah — AI, Machine Learning & Backend Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Ahmed Hesham Salah — Data Science student at Helwan National University specializing in RAG systems, Computer Vision CNNs, FastAPI backends, and data analytics.">
+  <meta name="keywords" content="Ahmed Hesham Salah, Data Science, AI Engineer, Machine Learning, RAG, FastAPI, Python, Computer Vision, Deep Learning, ChromaDB, Ollama, Cairo Egypt">
+  <meta name="author" content="Ahmed Hesham Salah">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ahmed Hesham Salah — AI, Machine Learning & Backend Developer">
+  <meta property="og:description" content="Building intelligent systems with AI, data, and software engineering. Explore featured RAG, Computer Vision, and Backend projects.">
+  
+  <!-- Favicon SVG (Data node icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300ff88' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='12 2 2 7 12 12 22 7 12 2'%3E%3C/polygon%3E%3Cpolyline points='2 17 12 22 22 17'%3E%3C/polyline%3E%3Cpolyline points='2 12 12 17 22 12'%3E%3C/polyline%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       01. STICKY HEADER & NAVIGATION
+       ====================================================================== -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Ahmed Hesham Homepage">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="prompt-char">&gt;</span>ahmed_salah<span class="brand-badge">AI/ML</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="#projects" class="btn btn-primary btn-sm">View Projects</a>
+        <a href="#contact" class="btn btn-outline btn-sm">Let's Connect</a>
+        <button class="mobile-toggle" aria-label="Toggle Mobile Navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <div style="display:flex; gap:10px; margin-top:10px;">
+        <a href="assets/docs/Ahmed_Hesham_CV.pdf" download="Ahmed_Hesham_CV.pdf" class="btn btn-secondary btn-sm" style="flex:1;">Download CV</a>
+        <a href="#contact" class="btn btn-primary btn-sm" style="flex:1;">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       02. HERO SECTION
+       ====================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left: Headline & Introduction -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>STATUS: OPEN TO AI / ML &amp; DATA SCIENCE INTERNSHIPS</span>
+          </div>
+
+          <h1 class="hero-title">
+            Building intelligent systems with <span class="text-lime">AI</span>, <span class="text-lime">data</span>, and <span class="text-lime">software engineering</span>.
+          </h1>
+
+          <div class="hero-identity">
+            <div class="hero-name">Ahmed Hesham Salah</div>
+            <div class="hero-role">
+              <span>Data Science Student</span>
+              <span>//</span>
+              <span>AI, Machine Learning &amp; Backend Developer</span>
+            </div>
+          </div>
+
+          <p class="hero-intro">
+            Undergraduate at <strong>Helwan National University</strong> with hands-on experience building end-to-end intelligent systems: from <strong>Retrieval-Augmented Generation (RAG)</strong> powered by local LLMs to <strong>CNN computer vision</strong> classifiers, <strong>FastAPI</strong> microservices, and high-volume data analytics dashboards. Completed ITI specialized training in AI and Flutter.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              View My Projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="assets/docs/Ahmed_Hesham_CV.pdf" download="Ahmed_Hesham_CV.pdf" class="btn btn-secondary" id="hero-download-cv">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download CV
+            </a>
+          </div>
+
+          <!-- Quick Social Links & Contact Strip -->
+          <div class="hero-quick-links">
+            <a href="https://github.com/Ahmad-Salah-22" target="_blank" rel="noopener noreferrer" class="quick-link-item">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>github/Ahmad-Salah-22</span>
+            </a>
+            <a href="mailto:ahmedheshamsalah2005@gmail.com" class="quick-link-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>ahmedheshamsalah2005@gmail.com</span>
+            </a>
+            <span class="quick-link-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Cairo, Egypt</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Technical Visual (Photo HUD Frame + Interactive Terminal) -->
+        <div class="hero-visual">
+          
+          <!-- Futuristic Profile HUD Card -->
+          <div class="profile-hud-card">
+            <div class="hud-top-bar">
+              <span>SYSTEM_NODE: CAI_EGY_01</span>
+              <span class="hud-status">
+                <span class="pulse-dot" style="width:6px; height:6px;"></span>
+                ONLINE &bull; READY
+              </span>
+            </div>
+            <div class="profile-media-wrapper">
+              <div class="profile-avatar-container">
+                <img src="assets/images/ahmed_hesham.jpg" alt="Ahmed Hesham Salah" class="profile-avatar-img" width="110" height="110">
+                <div class="avatar-hud-corners"></div>
+              </div>
+              <div class="profile-quick-stats">
+                <div class="stat-item">
+                  <span class="stat-label">INSTITUTION:</span>
+                  <span class="stat-val">Helwan National Univ.</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">DEGREE:</span>
+                  <span class="stat-val highlight">B.Sc. Computer Science</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">CORE ARCH:</span>
+                  <span class="stat-val">RAG / CNN / FastAPI</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">TRAINING:</span>
+                  <span class="stat-val highlight">ITI (AI &amp; Flutter)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Interactive Developer Terminal -->
+          <div class="dev-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="terminal-tabs">
+                <button class="terminal-tab-btn active" data-tab="py">ahmed.py</button>
+                <button class="terminal-tab-btn" data-tab="rag">rag_pipeline.sh</button>
+                <button class="terminal-tab-btn" data-tab="cli">cli_shell</button>
+              </div>
+            </div>
+            
+            <div class="terminal-body">
+              <!-- Tab 1: Python Simulation -->
+              <div class="terminal-tab-pane active" id="pane-py">
+                <div><span class="t-prompt">&gt;&gt;&gt;</span> <span class="t-cmd">from ai_pipeline import RAGAssistant, LocalLLM</span></div>
+                <div><span class="t-prompt">&gt;&gt;&gt;</span> <span class="t-cmd">assistant = RAGAssistant(model="llama3:8b", db="chromadb")</span></div>
+                <div class="t-dim">[INFO] Initialized SentenceTransformers('all-MiniLM-L6-v2') -> 384-dim</div>
+                <div class="t-dim">[INFO] Persistent ChromaDB vector store loaded via FastAPI lifespan handler</div>
+                <div><span class="t-prompt">&gt;&gt;&gt;</span> <span class="t-cmd">assistant.ask("Explain RAG pipeline query flow")</span></div>
+                <div class="t-success">[GROUNDED RESPONSE &bull; Source: docs/arch.pdf, Page 4]:</div>
+                <div class="t-blue">&bull; Ingested PDF chunks (800 chars, 150 overlap) with cosine similarity top-K retrieval.</div>
+              </div>
+
+              <!-- Tab 2: Shell RAG Demo -->
+              <div class="terminal-tab-pane" id="pane-rag">
+                <div><span class="t-prompt">$</span> <span class="t-cmd">docker-compose up -d rag_backend streamlit_ui</span></div>
+                <div class="t-dim">[+] Running 2/2: Container rag-fastapi Started, Container rag-ui Started</div>
+                <div><span class="t-prompt">$</span> <span class="t-cmd">curl -X POST "http://localhost:8000/query" -H "Content-Type: application/json"</span></div>
+                <div class="t-dim">{"query": "cite dataset statistics", "top_k": 3}</div>
+                <div class="t-success">HTTP/1.1 200 OK &bull; Response Time: 142ms</div>
+                <div class="t-blue">[Retrieved chunk 1: 54,000+ Spotify tracks analyzed | Dash KPI views]</div>
+              </div>
+
+              <!-- Tab 3: Interactive CLI Shell -->
+              <div class="terminal-tab-pane" id="pane-cli">
+                <div id="cli-output-log">
+                  <div class="t-dim">Antigravity Interactive Terminal v2.6. Type <span class="t-success">'help'</span> or click chips below.</div>
+                </div>
+                <div class="terminal-interactive-input-row">
+                  <span class="t-prompt">$</span>
+                  <input type="text" class="terminal-input" placeholder="type 'help', 'skills', 'projects', 'cv'..." aria-label="Interactive terminal command input">
+                </div>
+                <div class="terminal-quick-cmds">
+                  <span class="t-chip" data-cmd="whoami">whoami</span>
+                  <span class="t-chip" data-cmd="skills">skills</span>
+                  <span class="t-chip" data-cmd="projects">projects</span>
+                  <span class="t-chip" data-cmd="contact">contact</span>
+                  <span class="t-chip" data-cmd="cv">cv</span>
+                  <span class="t-chip" data-cmd="clear">clear</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       03. ABOUT SECTION
+       ====================================================================== -->
+  <section class="section-wrapper" id="about">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>// 01_PROFILE_DATA</span>
+        </div>
+        <h2 class="section-title">Engineered with Precision &amp; Real Systems</h2>
+        <p class="section-subtitle">
+          Data Science student at Helwan National University building verified machine learning systems, high-throughput APIs, and robust data pipelines.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Narrative Column -->
+        <div class="about-narrative">
+          <p class="about-p">
+            I am a <strong>Data Science student at Helwan National University</strong> (Sep 2023 – Present) dedicated to building real, end-to-end AI and software solutions. Rather than working solely with theoretical concepts, I focus on the entire lifecycle of intelligent applications: <strong>data ingestion, embedding vector stores, local LLM orchestration, model explainability, RESTful backend design, and containerized deployment</strong>.
+          </p>
+
+          <p class="about-p">
+            My practical experience spans building a <strong>full-stack Retrieval-Augmented Generation (RAG) assistant</strong> with local Ollama Llama 3 8B and ChromaDB, deep learning <strong>CNN image classifiers</strong> for multi-category waste sorting and gesture recognition, scalable <strong>FastAPI backends</strong> featuring Redis caching and role-based access control (RBAC), and <strong>blockchain smart contracts</strong> on Ethereum.
+          </p>
+
+          <p class="about-p">
+            I have completed rigorous professional training tracks with the <strong>Information Technology Institute (ITI)</strong> in both <strong>Artificial Intelligence (Summer 2026)</strong> and <strong>Flutter Development (Summer 2025)</strong>, along with certifications from <strong>NVIDIA</strong>, <strong>DataCamp</strong>, <strong>Kaggle</strong>, and the <strong>Python Institute</strong>.
+          </p>
+
+          <!-- 4 Core Pillars -->
+          <div class="about-highlights-grid">
+            <div class="about-highlight-card">
+              <div class="highlight-header">
+                <div class="highlight-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <div class="highlight-title">GenAI &amp; RAG Systems</div>
+              </div>
+              <div class="highlight-desc">
+                Vector databases, local LLM inference, embedding pipelines, chunking strategies, and strict anti-hallucination grounding.
+              </div>
+            </div>
+
+            <div class="about-highlight-card">
+              <div class="highlight-header">
+                <div class="highlight-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="highlight-title">Backend &amp; Caching</div>
+              </div>
+              <div class="highlight-desc">
+                FastAPI microservices, Pydantic schemas, Redis caching, SQLite, REST design, and containerization with Docker Compose.
+              </div>
+            </div>
+
+            <div class="about-highlight-card">
+              <div class="highlight-header">
+                <div class="highlight-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="highlight-title">Computer Vision &amp; CNN</div>
+              </div>
+              <div class="highlight-desc">
+                Convolutional neural networks, transfer learning, Grad-CAM model explainability, image sorting, and real-time video processing.
+              </div>
+            </div>
+
+            <div class="about-highlight-card">
+              <div class="highlight-header">
+                <div class="highlight-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <div class="highlight-title">Data Analytics &amp; Dash</div>
+              </div>
+              <div class="highlight-desc">
+                High-volume tabular analysis (54k+ records), API metadata pipelines, feature engineering, and dark-themed Plotly Dash dashboards.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Telemetry / Verified Metrics -->
+        <div class="about-telemetry-panel">
+          <div class="telemetry-header">
+            <span class="telemetry-title">// VERIFIED METRICS &amp; CAPABILITIES</span>
+            <span class="t-success">[AUDITED]</span>
+          </div>
+
+          <div class="telemetry-rows">
+            <div class="telemetry-row">
+              <span class="telemetry-key">RAG VECTOR DIMENSIONS:</span>
+              <span class="telemetry-val lime">384-D (all-MiniLM-L6-v2)</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-key">LOCAL LLM ORCHESTRATION:</span>
+              <span class="telemetry-val">Ollama / Llama 3 8B</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-key">DATASET ANALYZED (SPOTIFY):</span>
+              <span class="telemetry-val lime">54,000+ Audio Tracks</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-key">WASTE CLASSIFIER CLASSES:</span>
+              <span class="telemetry-val">5 Municipal Categories</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-key">BACKEND ARCHITECTURE:</span>
+              <span class="telemetry-val lime">FastAPI + Redis + Pydantic</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-key">TESTING &amp; AUTOMATION:</span>
+              <span class="telemetry-val">Pytest + Docker Compose</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-key">ACADEMIC STATUS:</span>
+              <span class="telemetry-val">Helwan National University (CS)</span>
+            </div>
+          </div>
+
+          <!-- Languages Block -->
+          <div class="languages-block">
+            <div class="lang-header">SPOKEN &amp; WRITTEN LANGUAGES</div>
+            <div class="lang-chips">
+              <div class="lang-chip">
+                <span>AR:</span> Arabic (Native)
+              </div>
+              <div class="lang-chip">
+                <span>EN:</span> English (Professional Proficiency)
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       04. SKILLS SECTION
+       ====================================================================== -->
+  <section class="section-wrapper" id="skills" style="background: rgba(7, 9, 14, 0.5);">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>// 02_TECH_STACK_MATRIX</span>
+        </div>
+        <h2 class="section-title">Technical Skills &amp; Domain Expertise</h2>
+        <p class="section-subtitle">
+          Organized by engineering discipline based on hands-on project implementations. No arbitrary percentage bars—only concrete frameworks, algorithms, and developer tools.
+        </p>
+      </div>
+
+      <!-- Controls: Category Filters & Realtime Search -->
+      <div class="skills-controls">
+        <div class="skills-filter-tabs">
+          <button class="skill-tab-btn active" data-category="all">All Domains</button>
+          <button class="skill-tab-btn" data-category="genai">Generative AI &amp; RAG</button>
+          <button class="skill-tab-btn" data-category="mldl">ML &amp; Deep Learning</button>
+          <button class="skill-tab-btn" data-category="backend">Backend &amp; APIs</button>
+          <button class="skill-tab-btn" data-category="data">Data &amp; Analytics</button>
+          <button class="skill-tab-btn" data-category="prog">Programming Languages</button>
+          <button class="skill-tab-btn" data-category="mobile-web3">Mobile &amp; Blockchain</button>
+          <button class="skill-tab-btn" data-category="tools">Tools &amp; DevOps</button>
+        </div>
+
+        <div class="skill-search-wrapper">
+          <svg class="skill-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="skill-search-input" placeholder="Search specific technology (e.g. FastAPI, ChromaDB, Pytest)..." aria-label="Search skills">
+        </div>
+      </div>
+
+      <!-- Skill Cards Grid -->
+      <div class="skills-categories-grid">
+        
+        <!-- 1. Generative AI & RAG -->
+        <div class="skill-category-card" data-category="genai">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="category-title">Generative AI &amp; RAG</div>
+            <div class="category-badge">Flagship</div>
+          </div>
+          <div class="skills-chip-container">
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Retrieval-Augmented Generation (RAG)</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Large Language Models (LLMs)</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Ollama (Local Inference)</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Prompt Engineering</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Text Embeddings</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Sentence-Transformers</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Vector Databases (ChromaDB)</span>
+          </div>
+        </div>
+
+        <!-- 2. Machine Learning & Deep Learning -->
+        <div class="skill-category-card" data-category="mldl">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <div class="category-title">ML &amp; Deep Learning</div>
+            <div class="category-badge">Core</div>
+          </div>
+          <div class="skills-chip-container">
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Machine Learning</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Deep Learning</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>CNN Architectures</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Transfer Learning</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Image Classification</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Computer Vision</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Natural Language Processing (NLP)</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Model Explainability</span>
+          </div>
+        </div>
+
+        <!-- 3. Backend Development -->
+        <div class="skill-category-card" data-category="backend">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="category-title">Backend Development</div>
+            <div class="category-badge">Production</div>
+          </div>
+          <div class="skills-chip-container">
+            <span class="skill-chip"><span class="skill-chip-dot"></span>FastAPI</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>RESTful API Design</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Pydantic V2</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>SQLite</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Redis Caching</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Role-Based Access Control (RBAC)</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Streamlit</span>
+          </div>
+        </div>
+
+        <!-- 4. Data & Analytics -->
+        <div class="skill-category-card" data-category="data">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3v18h18"></path>
+                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+              </svg>
+            </div>
+            <div class="category-title">Data &amp; Analytics</div>
+            <div class="category-badge">Scale</div>
+          </div>
+          <div class="skills-chip-container">
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Data Analysis</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Data Visualization</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Statistical Problem-Solving</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Pandas</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>NumPy</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Plotly Dash</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Jupyter Notebook</span>
+          </div>
+        </div>
+
+        <!-- 5. Programming Languages -->
+        <div class="skill-category-card" data-category="prog">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="category-title">Programming Languages</div>
+            <div class="category-badge">Polyglot</div>
+          </div>
+          <div class="skills-chip-container">
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Python</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>R</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>C++</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Java</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>SQL</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Dart</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Solidity</span>
+          </div>
+        </div>
+
+        <!-- 6. Mobile & Blockchain -->
+        <div class="skill-category-card" data-category="mobile-web3">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="category-title">Mobile &amp; Blockchain</div>
+            <div class="category-badge">Verified</div>
+          </div>
+          <div class="skills-chip-container">
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Flutter (Dart)</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Clean Architecture</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Solidity Smart Contracts</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Web3.py</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Ethereum</span>
+          </div>
+        </div>
+
+        <!-- 7. Tools & DevOps -->
+        <div class="skill-category-card" data-category="tools">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <div class="category-title">Tools &amp; DevOps</div>
+            <div class="category-badge">CI/CD</div>
+          </div>
+          <div class="skills-chip-container">
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Git</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>GitHub</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Docker</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Docker Compose</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Pytest (Automated Testing)</span>
+            <span class="skill-chip"><span class="skill-chip-dot"></span>Python Scripting</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       05. FEATURED PROJECTS SECTION
+       ====================================================================== -->
+  <section class="section-wrapper" id="projects">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>// 03_SYSTEMS_PORTFOLIO</span>
+        </div>
+        <h2 class="section-title">Featured Production &amp; Research Systems</h2>
+        <p class="section-subtitle">
+          Real software and AI solutions with complete architecture pipelines, automated tests, containerization, and public open-source repositories.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="projects-filter-bar">
+        <button class="project-filter-btn active" data-filter="all">All Systems (6)</button>
+        <button class="project-filter-btn" data-filter="rag">GenAI &amp; RAG</button>
+        <button class="project-filter-btn" data-filter="cv">Computer Vision &amp; CNN</button>
+        <button class="project-filter-btn" data-filter="data">Data Analytics</button>
+        <button class="project-filter-btn" data-filter="backend">Backend &amp; Web3</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- ================= PROJECT 1: FLAGSHIP RAG ASSISTANT ================= -->
+        <article class="project-card flagship" data-category="rag">
+          <div class="project-media-wrap">
+            <img src="assets/images/projects/rag_assistant.jpg" alt="RAG-Powered Document Assistant Architecture" class="project-img" loading="lazy">
+            <div class="project-media-overlay">
+              <span class="project-badge-tag highlight">FLAGSHIP AI PROJECT</span>
+              <span class="project-badge-tag">2026</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span>LOCAL LLM &bull; VECTOR SEARCH</span>
+              <span>github/Ahmad-Salah-22</span>
+            </div>
+            <h3 class="project-title">RAG-Powered Document Assistant</h3>
+            <p class="project-summary">
+              Full-stack AI application that lets users ask natural language questions over a PDF collection and receive grounded answers with precise document and page citations, running entirely offline on a local LLM.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>Built data ingestion pipeline with PyPDF page-level extraction, text cleaning, and overlapping chunking (800 chars, 150 overlap).</li>
+              <li>Generated 384-dimension embeddings with Sentence-Transformers (all-MiniLM-L6-v2) stored in persistent ChromaDB for cosine-similarity top-K retrieval.</li>
+              <li>Developed FastAPI backend with POST /query and GET /health, loading models once at startup via lifespan handler to avoid per-request overhead.</li>
+              <li>Integrated local Ollama LLM (Llama 3 8B) with strict grounding prompt so answers cite source chunks and fall back safely instead of hallucinating.</li>
+              <li>Engineered Streamlit UI with source citations and loading states; wrote Pytest tests and containerized stack with Docker Compose.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">ChromaDB</span>
+              <span class="tech-tag">Sentence-Transformers</span>
+              <span class="tech-tag">Ollama (Llama 3)</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Pytest</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Ahmad-Salah-22/RAG-Powered-Document-Assistant-" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                View on GitHub
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal-btn" data-project="rag-assistant">
+                Inspect Architecture
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 2: SPOTIFY ANALYTICS DASHBOARD ================= -->
+        <article class="project-card" data-category="data">
+          <div class="project-media-wrap">
+            <img src="assets/images/projects/spotify_analytics.jpg" alt="Spotify Analytics Dashboard" class="project-img" loading="lazy">
+            <div class="project-media-overlay">
+              <span class="project-badge-tag">Feb 2026 – May 2026</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span>54,000+ TRACKS ANALYZED</span>
+              <span>github/seifalmaz</span>
+            </div>
+            <h3 class="project-title">Spotify Analytics Dashboard</h3>
+            <p class="project-summary">
+              Interactive Plotly Dash data dashboard analyzing 54,000+ Spotify tracks across genre distributions, acoustic feature correlations, popularity trajectories, and temporal time-series evolution.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>Designed automated metadata recovery pipeline querying Spotify Web API using track_id to fill missing release dates.</li>
+              <li>Enriched dataset by joining secondary Spotify sources via left joins and validation checks, preserving temporal integrity.</li>
+              <li>Engineered interactive decade filters, genre evolutions, and explicit vs. clean audio comparisons with responsive dark UI.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Plotly Dash</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Spotify API</span>
+              <span class="tech-tag">Jupyter</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/seifalmaz/spotify-analytics-dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                View on GitHub
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal-btn" data-project="spotify-analytics">
+                Details
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 3: BLOCKCHAIN CERTIFICATE REGISTRY ================= -->
+        <article class="project-card" data-category="backend">
+          <div class="project-media-wrap">
+            <img src="assets/images/projects/blockchain_registry.jpg" alt="Blockchain Certificate Registry" class="project-img" loading="lazy">
+            <div class="project-media-overlay">
+              <span class="project-badge-tag">Jan 2026 – Apr 2026</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span>ETHEREUM SMART CONTRACTS</span>
+              <span>github/Ahmad-Salah-22</span>
+            </div>
+            <h3 class="project-title">Online Course Certificate Registry</h3>
+            <p class="project-summary">
+              Blockchain-based digital certificate registry where course completions are permanently recorded, tamper-proof, and publicly verifiable on-chain via smart contracts and Python tooling.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>Developed Solidity smart contracts with role-based access control (admin/user), batch operations, and emergency circuit breakers.</li>
+              <li>Implemented Python terminal client with admin/user menus, live blockchain event listening, and transaction scanning via Web3.py.</li>
+              <li>Wrote automated security tests, balance snapshot CSV exporters, and an admin analytics dashboard script.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Solidity</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Web3.py</span>
+              <span class="tech-tag">Ethereum</span>
+              <span class="tech-tag">RBAC</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Ahmad-Salah-22/CertificateProject" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                View on GitHub
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal-btn" data-project="blockchain-registry">
+                Details
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 4: WASTE CLASSIFIER ================= -->
+        <article class="project-card" data-category="cv">
+          <div class="project-media-wrap">
+            <img src="assets/images/projects/waste_classifier.svg" alt="Waste Classifier Computer Vision" class="project-img" loading="lazy">
+            <div class="project-media-overlay">
+              <span class="project-badge-tag">DEEP LEARNING</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span>5 RECYCLING CLASSES</span>
+              <span>github/seifalmaz</span>
+            </div>
+            <h3 class="project-title">Waste Classifier – Intelligent Recycling</h3>
+            <p class="project-summary">
+              End-to-end deep learning image classification system that accurately sorts municipal waste into 5 categories to automate smart recycling centers and promote environmental sustainability.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>Trained convolutional neural network architectures for robust multi-class image classification.</li>
+              <li>Classifies items across 5 categories: plastic, paper, glass, metal, and organic waste with high confidence.</li>
+              <li>Engineered image preprocessing and normalization pipelines for consistent inference under variable lighting.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Deep Learning</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">Image Classification</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/seifalmaz/waste-classifier" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                View on GitHub
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal-btn" data-project="waste-classifier">
+                Details
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 5: HAND GESTURE RECOGNITION ================= -->
+        <article class="project-card" data-category="cv">
+          <div class="project-media-wrap">
+            <img src="assets/images/projects/gesture_recognition.svg" alt="Hand Gesture Recognition System" class="project-img" loading="lazy">
+            <div class="project-media-overlay">
+              <span class="project-badge-tag">REAL-TIME CV</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span>TRANSFER LEARNING + EXPLAINABILITY</span>
+              <span>github/seifalmaz</span>
+            </div>
+            <h3 class="project-title">Hand Gesture Recognition System</h3>
+            <p class="project-summary">
+              CNN-based gesture classification engine using transfer learning to recognize hand poses (peace, stop, help) from real-time webcam streams with explainable visual attention heatmaps.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>Designed and fine-tuned pre-trained CNN backbones on gesture image datasets to maximize classification accuracy.</li>
+              <li>Compared multiple convolutional architectures to benchmark latency vs. precision trade-offs.</li>
+              <li>Engineered a desktop GUI visualizing real-time live video predictions, confidence scores, and Grad-CAM explainability.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">Transfer Learning</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Explainability</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/seifalmaz/gesture-recognition" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                View on GitHub
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal-btn" data-project="gesture-recognition">
+                Details
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PROJECT 6: TASK MANAGER API ================= -->
+        <article class="project-card" data-category="backend">
+          <div class="project-media-wrap">
+            <img src="assets/images/projects/task_manager_api.svg" alt="FastAPI Task Management Backend" class="project-img" loading="lazy">
+            <div class="project-media-overlay">
+              <span class="project-badge-tag">FASTAPI BACKEND</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span>REDIS CACHING + RBAC</span>
+              <span>github/ahmedelhossary22</span>
+            </div>
+            <h3 class="project-title">Task Manager API</h3>
+            <p class="project-summary">
+              High-concurrency backend system for project management and task lifecycle tracking, equipped with strict workflow validation, role-based access control, and low-latency Redis caching.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>Architected modular FastAPI routes with Pydantic request validation and SQLite database models.</li>
+              <li>Integrated Redis in-memory caching to optimize repetitive task queries and minimize database strain.</li>
+              <li>Implemented structured logging, role hierarchies (Admin, Manager, Member), and comprehensive error handlers.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">RBAC</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/ahmedelhossary22/Task-Management-System-Python-and-R-language-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                View on GitHub
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal-btn" data-project="task-manager-api">
+                Details
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       06. WORK EXPERIENCE SECTION
+       ====================================================================== -->
+  <section class="section-wrapper" id="experience" style="background: rgba(7, 9, 14, 0.5);">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>// 04_WORK_TIMELINE</span>
+        </div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">
+          Demonstrated history delivering client-facing software interfaces and driving technical talent acquisition with AI and data-driven methods.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Experience 1: Frontend Developer (Freelance) -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Frontend Developer</h3>
+                <div class="timeline-company">Freelance</div>
+              </div>
+              <div class="timeline-period">2024 – 2026</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Delivered responsive, client-facing web interfaces by translating design mockups into clean, functional front-end code.</li>
+              <li>Collaborated directly with clients to refine features, resolve interface challenges, and met project delivery deadlines.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2: Team Lead, Talent Acquisition -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Team Lead, Talent Acquisition</h3>
+                <div class="timeline-company">Hires Lab</div>
+              </div>
+              <div class="timeline-period">Jul 2024 – Sep 2025</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Led talent sourcing efforts focused on building diverse candidate pipelines and strengthening employer branding across technical domains.</li>
+              <li>Leveraged AI-driven sourcing tools and data analytics to optimize the talent evaluation and hiring workflow.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       07. EDUCATION SECTION
+       ====================================================================== -->
+  <section class="section-wrapper" id="education">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>// 05_ACADEMIC_FOUNDATION</span>
+        </div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">
+          Rigorous academic foundation in computer science and data systems principles.
+        </p>
+      </div>
+
+      <div class="education-container">
+        <div class="education-card">
+          <div class="edu-top-row">
+            <div>
+              <h3 class="edu-institution">Helwan National University</h3>
+              <div class="edu-degree">Bachelor's Degree, Computer Science and Technology</div>
+            </div>
+            <div class="edu-period">Sep 2023 – Present</div>
+          </div>
+
+          <div class="coursework-title">Key Relevant Coursework</div>
+          <div class="coursework-chips">
+            <span class="course-chip">Data Structures</span>
+            <span class="course-chip">Algorithm Design</span>
+            <span class="course-chip">Data Analysis</span>
+            <span class="course-chip">Big Data</span>
+            <span class="course-chip">Computer Networks</span>
+            <span class="course-chip">Operating Systems</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       08. CERTIFICATIONS & TRAINING SECTION
+       ====================================================================== -->
+  <section class="section-wrapper" id="certifications" style="background: rgba(7, 9, 14, 0.5);">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>// 06_VERIFIED_CREDENTIALS</span>
+        </div>
+        <h2 class="section-title">Certifications &amp; Professional Training</h2>
+        <p class="section-subtitle">
+          Accredited coursework and specialized intensive training tracks across AI, Deep Learning, Computer Vision, and Mobile Architecture. Click any card to inspect the credential.
+        </p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="cert-filter-bar">
+        <button class="cert-filter-btn active" data-filter="all">All Issuers</button>
+        <button class="cert-filter-btn" data-filter="iti">ITI (Information Technology Institute)</button>
+        <button class="cert-filter-btn" data-filter="nvidia">NVIDIA</button>
+        <button class="cert-filter-btn" data-filter="datacamp">DataCamp</button>
+        <button class="cert-filter-btn" data-filter="kaggle">Kaggle</button>
+        <button class="cert-filter-btn" data-filter="other">Route &amp; Cisco</button>
+      </div>
+
+      <!-- Certifications Grid -->
+      <div class="certs-grid">
+        
+        <!-- Cert 1: ITI AI 2 -->
+        <div class="cert-card" data-issuer="iti" data-title="AI 2 Training" data-issuer-name="Information Technology Institute (ITI)" data-date="Summer 2026">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">ITI</span>
+            <span class="cert-date">Summer 2026</span>
+          </div>
+          <div class="cert-name">AI 2 Training</div>
+          <div class="cert-id-text">Information Technology Institute</div>
+          <div class="cert-footer-action">
+            <span>Verified ITI Training Program</span>
+          </div>
+        </div>
+
+        <!-- Cert 2: ITI Flutter -->
+        <div class="cert-card" data-issuer="iti" data-title="Flutter Training" data-issuer-name="Information Technology Institute (ITI)" data-date="Summer 2025">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">ITI</span>
+            <span class="cert-date">Summer 2025</span>
+          </div>
+          <div class="cert-name">Flutter Training</div>
+          <div class="cert-id-text">Information Technology Institute</div>
+          <div class="cert-footer-action">
+            <span>Verified ITI Training Program</span>
+          </div>
+        </div>
+
+        <!-- Cert 3: NVIDIA Getting Started with Deep Learning -->
+        <div class="cert-card" data-issuer="nvidia" data-title="Getting Started with Deep Learning" data-issuer-name="NVIDIA Deep Learning Institute" data-date="Sep 22, 2025" data-img="assets/certificates/nvidia_getting_started_deep_learning.png" data-pdf="assets/certificates/nvidia_getting_started_deep_learning.pdf">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">NVIDIA</span>
+            <span class="cert-date">Sep 2025</span>
+          </div>
+          <div class="cert-name">Getting Started with Deep Learning</div>
+          <div class="cert-id-text">ID: IY2IQ2WcQg2syBdA1P_7Ew</div>
+          <div class="cert-footer-action">
+            <span>Inspect Certificate &amp; PDF</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Cert 4: NVIDIA Fundamentals of Deep Learning -->
+        <div class="cert-card" data-issuer="nvidia" data-title="Fundamentals of Deep Learning" data-issuer-name="NVIDIA" data-date="Verified Credential" data-img="assets/certificates/nvidia_fundamentals_deep_learning.png" data-pdf="assets/certificates/nvidia_fundamentals_deep_learning.pdf">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">NVIDIA</span>
+            <span class="cert-date">Competency</span>
+          </div>
+          <div class="cert-name">Fundamentals of Deep Learning</div>
+          <div class="cert-id-text">NVIDIA Deep Learning Institute</div>
+          <div class="cert-footer-action">
+            <span>Inspect Certificate &amp; PDF</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Cert 5: DataCamp NLP in Python -->
+        <div class="cert-card" data-issuer="datacamp" data-title="Natural Language Processing (NLP) in Python" data-issuer-name="DataCamp" data-date="May 03, 2026" data-img="assets/certificates/datacamp_nlp.png" data-pdf="assets/certificates/datacamp_nlp.pdf">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">DataCamp</span>
+            <span class="cert-date">May 2026</span>
+          </div>
+          <div class="cert-name">Natural Language Processing in Python</div>
+          <div class="cert-id-text">Certificate #47,414,661</div>
+          <div class="cert-footer-action">
+            <span>Inspect Certificate &amp; PDF</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Cert 6: DataCamp Image Processing in Python -->
+        <div class="cert-card" data-issuer="datacamp" data-title="Image Processing in Python" data-issuer-name="DataCamp" data-date="Mar 06, 2026" data-img="assets/certificates/datacamp_image_processing.png" data-pdf="assets/certificates/datacamp_image_processing.pdf">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">DataCamp</span>
+            <span class="cert-date">Mar 2026</span>
+          </div>
+          <div class="cert-name">Image Processing in Python</div>
+          <div class="cert-id-text">Certificate #46,551,298</div>
+          <div class="cert-footer-action">
+            <span>Inspect Certificate &amp; PDF</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Cert 7: Kaggle Computer Vision -->
+        <div class="cert-card" data-issuer="kaggle" data-title="Computer Vision" data-issuer-name="Kaggle" data-date="Completed" data-img="assets/certificates/kaggle_computer_vision.png">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Kaggle</span>
+            <span class="cert-date">Verified</span>
+          </div>
+          <div class="cert-name">Computer Vision</div>
+          <div class="cert-id-text">Kaggle Micro-Course Certificate</div>
+          <div class="cert-footer-action">
+            <span>Inspect Certificate</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Cert 8: Kaggle Intro to Deep Learning -->
+        <div class="cert-card" data-issuer="kaggle" data-title="Intro to Deep Learning" data-issuer-name="Kaggle" data-date="Completed" data-img="assets/certificates/kaggle_intro_deep_learning.png">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Kaggle</span>
+            <span class="cert-date">Verified</span>
+          </div>
+          <div class="cert-name">Intro to Deep Learning</div>
+          <div class="cert-id-text">Kaggle Micro-Course Certificate</div>
+          <div class="cert-footer-action">
+            <span>Inspect Certificate</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Cert 9: Route Academy Flutter Diploma -->
+        <div class="cert-card" data-issuer="other" data-title="Flutter Diploma" data-issuer-name="Route Academy" data-date="Completed">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Route</span>
+            <span class="cert-date">Diploma</span>
+          </div>
+          <div class="cert-name">Flutter Diploma</div>
+          <div class="cert-id-text">Route Academy Training</div>
+          <div class="cert-footer-action">
+            <span>Clean Architecture &amp; State Mgmt</span>
+          </div>
+        </div>
+
+        <!-- Cert 10: Cisco & Python Institute -->
+        <div class="cert-card" data-issuer="other" data-title="Python Essentials 1" data-issuer-name="Cisco Networking Academy & Python Institute" data-date="Completed">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Cisco</span>
+            <span class="cert-date">Certified</span>
+          </div>
+          <div class="cert-name">Python Essentials 1</div>
+          <div class="cert-id-text">Cisco Academy &amp; Python Institute</div>
+          <div class="cert-footer-action">
+            <span>Core Software Engineering</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       09. DEDICATED GITHUB / DEVELOPER SECTION
+       ====================================================================== -->
+  <section class="section-wrapper" id="github-dev">
+    <div class="container">
+      
+      <div class="developer-section-card">
+        <div class="github-hud-grid">
+          
+          <div class="github-hud-info">
+            <div class="section-tag" style="margin-bottom:0;">
+              <span class="tag-dot" id="gh-status-dot"></span>
+              <span>GITHUB // OPEN SOURCE ECOSYSTEM</span>
+            </div>
+
+            <h3 style="font-size: 2.1rem; color:#fff;">Explore My Open-Source Repositories</h3>
+            
+            <p style="color:var(--text-secondary); font-size:1rem; line-height:1.7;">
+              All production and research architectures—including the RAG Document Assistant, Plotly Dash analytics engine, and Ethereum certificate registry—are maintained publicly on GitHub with complete setup instructions, Docker Compose files, and automated unit test suites.
+            </p>
+
+            <div style="display:flex; gap:20px; font-family:var(--font-mono); font-size:0.88rem; color:#94a3b8;">
+              <div>
+                <span style="color:#00ff88; font-size:1.2rem; font-weight:bold;" id="gh-repos-count">6+</span> Repositories
+              </div>
+              <div>
+                <span style="color:#00ff88; font-size:1.2rem; font-weight:bold;" id="gh-followers-count">Active</span> Developer
+              </div>
+            </div>
+
+            <div style="margin-top:10px;">
+              <a href="https://github.com/Ahmad-Salah-22" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Explore My GitHub &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Repository Index Explorer -->
+          <div class="github-repos-explorer">
+            <div class="repo-explorer-header">
+              <span>PINNED REPOSITORIES</span>
+              <span style="color:#00ff88;">Ahmad-Salah-22</span>
+            </div>
+
+            <div class="repo-list-item">
+              <a href="https://github.com/Ahmad-Salah-22/RAG-Powered-Document-Assistant-" target="_blank" rel="noopener noreferrer" class="repo-name-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                RAG-Powered-Document-Assistant-
+              </a>
+              <span class="repo-tag">FastAPI / ChromaDB</span>
+            </div>
+
+            <div class="repo-list-item">
+              <a href="https://github.com/seifalmaz/spotify-analytics-dashboard" target="_blank" rel="noopener noreferrer" class="repo-name-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                spotify-analytics-dashboard
+              </a>
+              <span class="repo-tag">Plotly Dash / 54k</span>
+            </div>
+
+            <div class="repo-list-item">
+              <a href="https://github.com/Ahmad-Salah-22/CertificateProject" target="_blank" rel="noopener noreferrer" class="repo-name-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                CertificateProject
+              </a>
+              <span class="repo-tag">Solidity / Web3.py</span>
+            </div>
+
+            <div class="repo-list-item">
+              <a href="https://github.com/seifalmaz/waste-classifier" target="_blank" rel="noopener noreferrer" class="repo-name-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                waste-classifier
+              </a>
+              <span class="repo-tag">CNN / 5 Classes</span>
+            </div>
+
+            <div class="repo-list-item">
+              <a href="https://github.com/seifalmaz/gesture-recognition" target="_blank" rel="noopener noreferrer" class="repo-name-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                gesture-recognition
+              </a>
+              <span class="repo-tag">Real-Time Video</span>
+            </div>
+
+            <div class="repo-list-item">
+              <a href="https://github.com/ahmedelhossary22/Task-Management-System-Python-and-R-language-project" target="_blank" rel="noopener noreferrer" class="repo-name-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                Task-Management-System
+              </a>
+              <span class="repo-tag">FastAPI / Redis</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       10. CONTACT SECTION
+       ====================================================================== -->
+  <section class="section-wrapper" id="contact">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>// 07_TRANSMISSION_DISPATCH</span>
+        </div>
+        <h2 class="section-title">Let's Build Something Intelligent.</h2>
+        <p class="section-subtitle">
+          I am currently open to internship opportunities, junior AI/ML engineering positions, and data science collaborations. Reach out directly or dispatch a message below.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Direct Channels with One-Click Copy -->
+        <div class="contact-info-col">
+          <div class="contact-headline">Direct Contact Channels</div>
+          <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6;">
+            Feel free to contact me via email or phone. I am located in Cairo, Egypt and available for on-site, hybrid, or remote positions.
+          </p>
+
+          <div class="contact-methods">
+            
+            <!-- Email Card -->
+            <div class="contact-method-card">
+              <div class="method-details">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="method-label">Direct Email</div>
+                  <div class="method-value">
+                    <a href="mailto:ahmedheshamsalah2005@gmail.com">ahmedheshamsalah2005@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="ahmedheshamsalah2005@gmail.com" title="Copy email address" aria-label="Copy email address">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-method-card">
+              <div class="method-details">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="method-label">Phone / WhatsApp</div>
+                  <div class="method-value">
+                    <a href="tel:+201098790003">+20 109 879 0003</a>
+                  </div>
+                </div>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="+201098790003" title="Copy phone number" aria-label="Copy phone number">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-method-card">
+              <div class="method-details">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="method-label">Base Location</div>
+                  <div class="method-value">Cairo, Egypt</div>
+                </div>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="Cairo, Egypt" title="Copy location" aria-label="Copy location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- GitHub Profile Card -->
+            <div class="contact-method-card">
+              <div class="method-details">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="method-label">GitHub Account</div>
+                  <div class="method-value">
+                    <a href="https://github.com/Ahmad-Salah-22" target="_blank" rel="noopener noreferrer">github.com/Ahmad-Salah-22</a>
+                  </div>
+                </div>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="https://github.com/Ahmad-Salah-22" title="Copy GitHub profile link" aria-label="Copy GitHub profile link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-container">
+          <form class="contact-form" id="portfolio-contact-form">
+            <div class="form-group">
+              <label for="sender-name" class="form-label">YOUR NAME *</label>
+              <input type="text" id="sender-name" class="form-input" placeholder="e.g. Alex Mercer" required>
+            </div>
+
+            <div class="form-group">
+              <label for="sender-email" class="form-label">YOUR EMAIL ADDRESS *</label>
+              <input type="email" id="sender-email" class="form-input" placeholder="e.g. alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="sender-subject" class="form-label">SUBJECT / OPPORTUNITY</label>
+              <input type="text" id="sender-subject" class="form-input" placeholder="e.g. AI / Machine Learning Internship Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="sender-message" class="form-label">MESSAGE *</label>
+              <textarea id="sender-message" class="form-textarea" placeholder="Detail your project or role requirements..." required></textarea>
+            </div>
+
+            <div id="form-status-message" class="form-status-msg"></div>
+
+            <button type="submit" class="btn btn-primary" id="btn-submit-message">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       11. FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        &copy; 2026 Ahmed Hesham Salah. Built with Vanilla HTML5, CSS3 &amp; JS.
+      </div>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <a href="assets/docs/Ahmed_Hesham_CV.pdf" download="Ahmed_Hesham_CV.pdf" style="font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-lime);">
+          [Download CV]
+        </a>
+        <button class="footer-back-to-top" aria-label="Back to top">
+          Back to Top &uarr;
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       12. INTERACTIVE MODALS
+       ====================================================================== -->
+
+  <!-- Project Architecture Breakdown Modal -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close project modal">&times;</button>
+      <div class="modal-content">
+        <h3 id="modal-project-title" style="font-size:1.6rem; color:#fff; margin-bottom:4px;"></h3>
+        <p id="modal-project-subtitle" style="font-family:var(--font-mono); font-size:0.85rem; color:#00ff88; margin-bottom:20px;"></p>
+        <div id="modal-project-body"></div>
+        <div style="margin-top:24px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:flex-end;">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modal-project-github">
+            Open GitHub Repository &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate Lightbox Modal -->
+  <div class="modal-backdrop" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+    <div class="modal-dialog" style="max-width: 800px;">
+      <button class="modal-close-btn" aria-label="Close certificate modal">&times;</button>
+      <div class="modal-content">
+        <h3 id="cert-modal-title" style="font-size:1.4rem; color:#fff; margin-bottom:4px;"></h3>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+          <span id="cert-modal-issuer" style="font-family:var(--font-mono); font-size:0.85rem; color:#00ff88;"></span>
+          <span id="cert-modal-date" style="font-family:var(--font-mono); font-size:0.8rem; color:#94a3b8;"></span>
+        </div>
+        <img id="cert-modal-img" src="" alt="Certificate Preview" class="modal-preview-img" style="display:none;">
+        <div style="margin-top:20px; display:flex; justify-content:flex-end; gap:12px;">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="cert-modal-pdf" style="display:none;">
+            View Official PDF Document &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>

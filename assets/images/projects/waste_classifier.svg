@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-w" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#07080c"/>
+    </linearGradient>
+    <filter id="glow-w" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-grad-w)"/>
+  <!-- Grid lines -->
+  <g stroke="rgba(0, 255, 136, 0.07)" stroke-width="1">
+    <line x1="0" y1="75" x2="800" y2="75" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="225" x2="800" y2="225" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="375" x2="800" y2="375" />
+    <line x1="160" y1="0" x2="160" y2="450" />
+    <line x1="320" y1="0" x2="320" y2="450" />
+    <line x1="480" y1="0" x2="480" y2="450" />
+    <line x1="640" y1="0" x2="640" y2="450" />
+  </g>
+  <!-- HUD Header -->
+  <rect x="30" y="25" width="740" height="45" rx="8" fill="rgba(16, 25, 20, 0.6)" stroke="rgba(0, 255, 136, 0.3)" stroke-width="1"/>
+  <circle cx="55" cy="47" r="5" fill="#00ff88" filter="url(#glow-w)"/>
+  <text x="72" y="52" fill="#00ff88" font-family="monospace" font-size="14" font-weight="bold" letter-spacing="2">CNN INFERENCE ENGINE // 5-CLASS WASTE CLASSIFIER</text>
+  <text x="640" y="51" fill="#94a3b8" font-family="monospace" font-size="12">ACCURACY: 96.8%</text>
+
+  <!-- Left: Target Image Detection Box -->
+  <rect x="30" y="85" width="360" height="335" rx="10" fill="rgba(12, 17, 24, 0.8)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <text x="50" y="115" fill="#cbd5e1" font-family="monospace" font-size="12">INPUT_STREAM: CAM_01 // 640x640</text>
+  
+  <!-- Detection Bounding Box 1 -->
+  <rect x="70" y="145" width="280" height="200" rx="6" fill="rgba(0, 255, 136, 0.04)" stroke="#00ff88" stroke-width="2" stroke-dasharray="6,3"/>
+  <rect x="70" y="145" width="130" height="24" fill="#00ff88" rx="2"/>
+  <text x="78" y="161" fill="#05080f" font-family="monospace" font-size="11" font-weight="bold">PLASTIC [98.4%]</text>
+  <!-- Corner crosses -->
+  <path d="M60 135 L80 135 M70 125 L70 145" stroke="#00ff88" stroke-width="1.5"/>
+  <path d="M340 135 L360 135 M350 125 L350 145" stroke="#00ff88" stroke-width="1.5"/>
+  <path d="M60 355 L80 355 M70 345 L70 365" stroke="#00ff88" stroke-width="1.5"/>
+  <path d="M340 355 L360 355 M350 345 L350 365" stroke="#00ff88" stroke-width="1.5"/>
+  <!-- Feature lines inside box -->
+  <circle cx="210" cy="245" r="40" fill="none" stroke="rgba(0, 255, 136, 0.25)" stroke-width="1" stroke-dasharray="4,4"/>
+  <circle cx="210" cy="245" r="6" fill="#00ff88"/>
+  <line x1="210" y1="200" x2="210" y2="290" stroke="rgba(0, 255, 136, 0.4)" stroke-width="1"/>
+  <line x1="165" y1="245" x2="255" y2="245" stroke="rgba(0, 255, 136, 0.4)" stroke-width="1"/>
+  <text x="130" y="375" fill="#94a3b8" font-family="monospace" font-size="11">CLASSIFICATION: RECYCLABLE</text>
+
+  <!-- Right: 5 Categories Meters -->
+  <rect x="410" y="85" width="360" height="335" rx="10" fill="rgba(12, 17, 24, 0.8)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <text x="430" y="115" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold">CLASS PROBABILITY DISTRIBUTION</text>
+
+  <!-- Class 1: Plastic -->
+  <text x="430" y="150" fill="#f8fafc" font-family="monospace" font-size="12">01. PLASTIC</text>
+  <text x="725" y="150" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold">98.4%</text>
+  <rect x="430" y="158" width="320" height="8" rx="4" fill="rgba(255, 255, 255, 0.08)"/>
+  <rect x="430" y="158" width="315" height="8" rx="4" fill="#00ff88" filter="url(#glow-w)"/>
+
+  <!-- Class 2: Paper -->
+  <text x="430" y="200" fill="#94a3b8" font-family="monospace" font-size="12">02. PAPER</text>
+  <text x="732" y="200" fill="#94a3b8" font-family="monospace" font-size="12">0.8%</text>
+  <rect x="430" y="208" width="320" height="8" rx="4" fill="rgba(255, 255, 255, 0.08)"/>
+  <rect x="430" y="208" width="12" height="8" rx="4" fill="rgba(0, 255, 136, 0.4)"/>
+
+  <!-- Class 3: Glass -->
+  <text x="430" y="250" fill="#94a3b8" font-family="monospace" font-size="12">03. GLASS</text>
+  <text x="732" y="250" fill="#94a3b8" font-family="monospace" font-size="12">0.4%</text>
+  <rect x="430" y="258" width="320" height="8" rx="4" fill="rgba(255, 255, 255, 0.08)"/>
+  <rect x="430" y="258" width="8" height="8" rx="4" fill="rgba(0, 255, 136, 0.4)"/>
+
+  <!-- Class 4: Metal -->
+  <text x="430" y="300" fill="#94a3b8" font-family="monospace" font-size="12">04. METAL</text>
+  <text x="732" y="300" fill="#94a3b8" font-family="monospace" font-size="12">0.3%</text>
+  <rect x="430" y="308" width="320" height="8" rx="4" fill="rgba(255, 255, 255, 0.08)"/>
+  <rect x="430" y="308" width="6" height="8" rx="4" fill="rgba(0, 255, 136, 0.4)"/>
+
+  <!-- Class 5: Organic -->
+  <text x="430" y="350" fill="#94a3b8" font-family="monospace" font-size="12">05. ORGANIC</text>
+  <text x="732" y="350" fill="#94a3b8" font-family="monospace" font-size="12">0.1%</text>
+  <rect x="430" y="358" width="320" height="8" rx="4" fill="rgba(255, 255, 255, 0.08)"/>
+  <rect x="430" y="358" width="4" height="8" rx="4" fill="rgba(0, 255, 136, 0.4)"/>
+
+  <!-- Bottom stat tags -->
+  <rect x="430" y="385" width="95" height="22" rx="4" fill="rgba(0, 255, 136, 0.1)" stroke="rgba(0, 255, 136, 0.3)" stroke-width="1"/>
+  <text x="440" y="400" fill="#00ff88" font-family="monospace" font-size="10">CNN: MobileNet</text>
+  <rect x="535" y="385" width="105" height="22" rx="4" fill="rgba(0, 255, 136, 0.1)" stroke="rgba(0, 255, 136, 0.3)" stroke-width="1"/>
+  <text x="545" y="400" fill="#00ff88" font-family="monospace" font-size="10">LATENCY: 14ms</text>
+  <rect x="650" y="385" width="100" height="22" rx="4" fill="rgba(0, 255, 136, 0.1)" stroke="rgba(0, 255, 136, 0.3)" stroke-width="1"/>
+  <text x="660" y="400" fill="#00ff88" font-family="monospace" font-size="10">DEVICE: CUDA</text>
+</svg>
