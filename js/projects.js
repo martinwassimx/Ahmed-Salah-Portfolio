@@ -393,38 +393,106 @@
     });
   });
 
-  // Certificate Lightbox
+  // -------------------------------------------------------------------------
+  // 04. CERTIFICATIONS CATEGORY FILTER
+  // -------------------------------------------------------------------------
+  const certFilterPills = document.querySelectorAll('.cert-filter-pill');
+  const certCards = document.querySelectorAll('.cert-card-enhanced');
+
+  certFilterPills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      certFilterPills.forEach((p) => p.classList.remove('active'));
+      pill.classList.add('active');
+
+      const filter = pill.getAttribute('data-filter');
+      certCards.forEach((card) => {
+        const cat = card.getAttribute('data-category');
+        if (filter === 'all' || cat === filter) {
+          card.classList.remove('filtered-out');
+        } else {
+          card.classList.add('filtered-out');
+        }
+      });
+    });
+  });
+
+  // -------------------------------------------------------------------------
+  // 05. CERTIFICATE INSPECTOR & LIGHTBOX MODAL
+  // -------------------------------------------------------------------------
   const certModal = document.getElementById('cinematic-cert-modal');
   const certModalTitle = document.getElementById('c-cert-title');
   const certModalMeta = document.getElementById('c-cert-meta');
+  const certModalDesc = document.getElementById('c-cert-desc');
   const certModalImg = document.getElementById('c-cert-img');
   const certModalPdf = document.getElementById('c-cert-pdf');
 
-  document.querySelectorAll('.cert-cinematic-card').forEach((card) => {
-    card.addEventListener('click', () => {
-      const title = card.getAttribute('data-title');
-      const org = card.getAttribute('data-org');
-      const date = card.getAttribute('data-date');
-      const img = card.getAttribute('data-img');
-      const pdf = card.getAttribute('data-pdf');
+  // Curriculum descriptions for specialized tracks
+  const trackDetails = {
+    'AI 2 Intensive Training': 'Specialized intensive track completed at the Information Technology Institute (ITI). The curriculum focused on Deep Learning architectures, Neural Network training, Computer Vision CNN classifiers, and Natural Language Processing pipelines.',
+    'Flutter Application Development': 'Intensive mobile architecture track completed at the Information Technology Institute (ITI). The curriculum covered advanced Dart programming, Clean Architecture patterns, BLoC state management, and enterprise REST API integrations.',
+    'Flutter Mobile Engineering Diploma': 'Comprehensive professional software engineering diploma completed at Route Academy. Covered full-lifecycle cross-platform mobile engineering with Flutter, Dart OOP, local SQLite storage, Firebase backend, and Clean Architecture.',
+    'Python Essentials 1': 'Certified foundational software engineering course by Cisco Networking Academy and the Python Institute. Covers procedural programming, data structures, algorithm logic, exception handling, and modular architecture.'
+  };
 
-      if (certModal) {
-        certModalTitle.textContent = title;
-        certModalMeta.textContent = `${org} // ${date}`;
-        if (img) {
-          certModalImg.src = img;
-          certModalImg.style.display = 'block';
-        } else {
-          certModalImg.style.display = 'none';
-        }
-        if (pdf) {
-          certModalPdf.href = pdf;
-          certModalPdf.style.display = 'inline-flex';
-        } else {
-          certModalPdf.style.display = 'none';
-        }
-        certModal.classList.add('open');
-        document.body.style.overflow = 'hidden';
+  const openCertModal = (title, org, date, img, pdf) => {
+    if (!certModal) return;
+    certModalTitle.textContent = title || 'Certificate Document';
+    certModalMeta.textContent = `${org || 'Verified Issuer'} // ${date || 'Accredited'}`;
+
+    if (trackDetails[title]) {
+      if (certModalDesc) {
+        certModalDesc.textContent = trackDetails[title];
+        certModalDesc.style.display = 'block';
+      }
+    } else {
+      if (certModalDesc) {
+        certModalDesc.style.display = 'none';
+        certModalDesc.textContent = '';
+      }
+    }
+
+    if (img) {
+      certModalImg.src = img;
+      certModalImg.style.display = 'block';
+    } else {
+      certModalImg.style.display = 'none';
+      certModalImg.src = '';
+    }
+
+    if (pdf) {
+      certModalPdf.href = pdf;
+      certModalPdf.style.display = 'inline-flex';
+    } else {
+      certModalPdf.style.display = 'none';
+    }
+
+    certModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  document.querySelectorAll('.cert-lightbox-trigger').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const title = btn.getAttribute('data-title');
+      const org = btn.getAttribute('data-org');
+      const date = btn.getAttribute('data-date');
+      const img = btn.getAttribute('data-img');
+      const pdf = btn.getAttribute('data-pdf');
+      openCertModal(title, org, date, img, pdf);
+    });
+  });
+
+  document.querySelectorAll('.cert-card-enhanced').forEach((card) => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.btn-cert-inspect')) return;
+      const btn = card.querySelector('.cert-lightbox-trigger');
+      if (btn) {
+        const title = btn.getAttribute('data-title');
+        const org = btn.getAttribute('data-org');
+        const date = btn.getAttribute('data-date');
+        const img = btn.getAttribute('data-img');
+        const pdf = btn.getAttribute('data-pdf');
+        openCertModal(title, org, date, img, pdf);
       }
     });
   });

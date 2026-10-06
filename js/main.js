@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCursor();
 
     // Hover interactions
-    const interactiveElements = document.querySelectorAll('a, button, input, textarea, .cluster-btn, .cert-cinematic-card');
+    const interactiveElements = document.querySelectorAll('a, button, input, textarea, .cluster-btn, .cert-cinematic-card, .cert-card-enhanced, .cert-filter-pill, .channel-card, .btn-cert-inspect, .btn-channel-action');
     interactiveElements.forEach((el) => {
       el.addEventListener('mouseenter', () => {
         cursorRing.classList.add('hover-active');
