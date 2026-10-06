@@ -153,13 +153,18 @@
   }
 
   .reactor-core-card {
-    width: 170px;
-    height: 220px;
+    width: 180px;
+    height: 240px;
     padding: 10px;
   }
 
+  .core-portrait-frame {
+    width: 100%;
+    height: 160px;
+  }
+
   .core-portrait-img {
-    height: 140px;
+    height: 100%;
   }
 
   .satellite-hud-badge {

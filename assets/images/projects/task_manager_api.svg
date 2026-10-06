@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
   <defs>
     <linearGradient id="bg-grad-t" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0d14"/>
-      <stop offset="100%" stop-color="#05070a"/>
+      <stop offset="0%" stop-color="#0d0708"/>
+      <stop offset="100%" stop-color="#050505"/>
     </linearGradient>
     <filter id="glow-t" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="4" result="blur" />
@@ -11,7 +11,7 @@
   </defs>
   <rect width="800" height="450" fill="url(#bg-grad-t)"/>
   <!-- Matrix / Grid -->
-  <g stroke="rgba(0, 255, 136, 0.05)" stroke-width="1">
+  <g stroke="rgba(255, 26, 42, 0.05)" stroke-width="1">
     <line x1="0" y1="75" x2="800" y2="75" />
     <line x1="0" y1="150" x2="800" y2="150" />
     <line x1="0" y1="225" x2="800" y2="225" />
@@ -22,9 +22,9 @@
     <line x1="600" y1="0" x2="600" y2="450" />
   </g>
   <!-- Header HUD -->
-  <rect x="30" y="25" width="740" height="45" rx="8" fill="rgba(16, 25, 20, 0.6)" stroke="rgba(0, 255, 136, 0.3)" stroke-width="1"/>
-  <circle cx="55" cy="47" r="5" fill="#00ff88" filter="url(#glow-t)"/>
-  <text x="72" y="52" fill="#00ff88" font-family="monospace" font-size="14" font-weight="bold" letter-spacing="2">FASTAPI TASK MANAGER // REST &amp; RBAC BACKEND</text>
+  <rect x="30" y="25" width="740" height="45" rx="8" fill="rgba(30, 10, 14, 0.6)" stroke="rgba(255, 26, 42, 0.3)" stroke-width="1"/>
+  <circle cx="55" cy="47" r="5" fill="#ff1a2a" filter="url(#glow-t)"/>
+  <text x="72" y="52" fill="#ff1a2a" font-family="monospace" font-size="14" font-weight="bold" letter-spacing="2">FASTAPI TASK MANAGER // REST &amp; RBAC BACKEND</text>
   <text x="640" y="51" fill="#94a3b8" font-family="monospace" font-size="12">STATUS: 200 OK</text>
 
   <!-- Left: Endpoints & Swagger -->
@@ -32,23 +32,23 @@
   <text x="50" y="115" fill="#cbd5e1" font-family="monospace" font-size="12">API ENDPOINTS // OPENAPI 3.1</text>
   
   <!-- Endpoint 1: POST /auth/login -->
-  <rect x="50" y="135" width="340" height="42" rx="6" fill="rgba(0, 255, 136, 0.05)" stroke="rgba(0, 255, 136, 0.2)" stroke-width="1"/>
-  <rect x="60" y="145" width="48" height="22" rx="3" fill="#00ff88"/>
-  <text x="70" y="160" fill="#05080f" font-family="monospace" font-size="11" font-weight="bold">POST</text>
+  <rect x="50" y="135" width="340" height="42" rx="6" fill="rgba(255, 26, 42, 0.05)" stroke="rgba(255, 26, 42, 0.2)" stroke-width="1"/>
+  <rect x="60" y="145" width="48" height="22" rx="3" fill="#ff1a2a"/>
+  <text x="70" y="160" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">POST</text>
   <text x="120" y="161" fill="#f8fafc" font-family="monospace" font-size="12">/api/v1/auth/token</text>
-  <text x="340" y="161" fill="#00ff88" font-family="monospace" font-size="11">JWT</text>
+  <text x="340" y="161" fill="#ff1a2a" font-family="monospace" font-size="11">JWT</text>
 
   <!-- Endpoint 2: GET /tasks -->
   <rect x="50" y="190" width="340" height="42" rx="6" fill="rgba(30, 41, 59, 0.5)" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1"/>
   <rect x="60" y="200" width="48" height="22" rx="3" fill="#3b82f6"/>
   <text x="73" y="215" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">GET</text>
   <text x="120" y="216" fill="#f8fafc" font-family="monospace" font-size="12">/api/v1/tasks</text>
-  <text x="310" y="216" fill="#b6ff00" font-family="monospace" font-size="10">CACHED</text>
+  <text x="310" y="216" fill="#ff3344" font-family="monospace" font-size="10">CACHED</text>
 
   <!-- Endpoint 3: POST /tasks -->
-  <rect x="50" y="245" width="340" height="42" rx="6" fill="rgba(0, 255, 136, 0.05)" stroke="rgba(0, 255, 136, 0.2)" stroke-width="1"/>
-  <rect x="60" y="255" width="48" height="22" rx="3" fill="#00ff88"/>
-  <text x="70" y="270" fill="#05080f" font-family="monospace" font-size="11" font-weight="bold">POST</text>
+  <rect x="50" y="245" width="340" height="42" rx="6" fill="rgba(255, 26, 42, 0.05)" stroke="rgba(255, 26, 42, 0.2)" stroke-width="1"/>
+  <rect x="60" y="255" width="48" height="22" rx="3" fill="#ff1a2a"/>
+  <text x="70" y="270" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">POST</text>
   <text x="120" y="271" fill="#f8fafc" font-family="monospace" font-size="12">/api/v1/tasks/assign</text>
   <text x="325" y="271" fill="#94a3b8" font-family="monospace" font-size="10">RBAC</text>
 
@@ -57,30 +57,30 @@
   <rect x="60" y="310" width="48" height="22" rx="3" fill="#eab308"/>
   <text x="75" y="325" fill="#000000" font-family="monospace" font-size="11" font-weight="bold">PUT</text>
   <text x="120" y="326" fill="#f8fafc" font-family="monospace" font-size="12">/api/v1/tasks/{id}</text>
-  <text x="320" y="326" fill="#00ff88" font-family="monospace" font-size="10">VALID</text>
+  <text x="320" y="326" fill="#ff1a2a" font-family="monospace" font-size="10">VALID</text>
 
   <!-- Bottom log -->
   <text x="50" y="390" fill="#64748b" font-family="monospace" font-size="11">Uvicorn running on http://127.0.0.1:8000</text>
 
   <!-- Right: Redis & Architecture -->
   <rect x="430" y="85" width="340" height="335" rx="10" fill="rgba(12, 17, 24, 0.8)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-  <text x="450" y="115" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold">CACHE &amp; STORAGE ARCHITECTURE</text>
+  <text x="450" y="115" fill="#ff1a2a" font-family="monospace" font-size="12" font-weight="bold">CACHE &amp; STORAGE ARCHITECTURE</text>
 
   <!-- Redis Cache Box -->
   <rect x="450" y="135" width="300" height="75" rx="6" fill="rgba(239, 68, 68, 0.06)" stroke="rgba(239, 68, 68, 0.25)" stroke-width="1"/>
   <text x="465" y="160" fill="#ef4444" font-family="monospace" font-size="12" font-weight="bold">REDIS IN-MEMORY CACHE</text>
   <text x="465" y="180" fill="#94a3b8" font-family="monospace" font-size="11">TTL: 300s // Cache Hit Latency: 1.2ms</text>
-  <text x="465" y="197" fill="#00ff88" font-family="monospace" font-size="11">Cache Hit Ratio: 94.2%</text>
+  <text x="465" y="197" fill="#ff1a2a" font-family="monospace" font-size="11">Cache Hit Ratio: 94.2%</text>
 
   <!-- SQLite DB Box -->
-  <rect x="450" y="225" width="300" height="75" rx="6" fill="rgba(0, 255, 136, 0.05)" stroke="rgba(0, 255, 136, 0.25)" stroke-width="1"/>
-  <text x="465" y="250" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold">SQLITE / PYDANTIC MODELS</text>
+  <rect x="450" y="225" width="300" height="75" rx="6" fill="rgba(255, 26, 42, 0.05)" stroke="rgba(255, 26, 42, 0.25)" stroke-width="1"/>
+  <text x="465" y="250" fill="#ff1a2a" font-family="monospace" font-size="12" font-weight="bold">SQLITE / PYDANTIC MODELS</text>
   <text x="465" y="270" fill="#94a3b8" font-family="monospace" font-size="11">Relational Schema // Workflow Validation</text>
   <text x="465" y="287" fill="#cbd5e1" font-family="monospace" font-size="11">Roles: Admin | Manager | Member</text>
 
   <!-- Bottom chips -->
-  <rect x="450" y="320" width="140" height="24" rx="4" fill="rgba(0, 255, 136, 0.1)" stroke="rgba(0, 255, 136, 0.3)" stroke-width="1"/>
-  <text x="460" y="336" fill="#00ff88" font-family="monospace" font-size="10">ASYNC WORKFLOW</text>
-  <rect x="605" y="320" width="145" height="24" rx="4" fill="rgba(0, 255, 136, 0.1)" stroke="rgba(0, 255, 136, 0.3)" stroke-width="1"/>
-  <text x="615" y="336" fill="#00ff88" font-family="monospace" font-size="10">STRUCTURED LOGS</text>
+  <rect x="450" y="320" width="140" height="24" rx="4" fill="rgba(255, 26, 42, 0.1)" stroke="rgba(255, 26, 42, 0.3)" stroke-width="1"/>
+  <text x="460" y="336" fill="#ff1a2a" font-family="monospace" font-size="10">ASYNC WORKFLOW</text>
+  <rect x="605" y="320" width="145" height="24" rx="4" fill="rgba(255, 26, 42, 0.1)" stroke="rgba(255, 26, 42, 0.3)" stroke-width="1"/>
+  <text x="615" y="336" fill="#ff1a2a" font-family="monospace" font-size="10">STRUCTURED LOGS</text>
 </svg>
