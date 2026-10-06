@@ -300,118 +300,183 @@ body {
 /* --------------------------------------------------------------------------
    06. FLOATING PILL NAVIGATION BAR
    -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   06. FLOATING PILL NAVIGATION BAR — PREMIUM CINEMATIC CAPSULE
+   -------------------------------------------------------------------------- */
 .floating-navbar {
   position: fixed;
-  top: 24px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  max-width: 90vw;
-  background: rgba(14, 14, 14, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--dark-border);
+  max-width: calc(100vw - 32px);
+  height: 54px;
+  background: rgba(10, 10, 12, 0.82);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-full);
-  padding: 8px 16px 8px 24px;
+  padding: 0 8px 0 20px;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 18px;
   z-index: 1000;
-  transition: all var(--trans-normal);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 
+    0 1px 0 rgba(255, 255, 255, 0.1) inset,
+    0 16px 40px rgba(0, 0, 0, 0.85),
+    0 0 24px rgba(139, 0, 0, 0.15);
+  white-space: nowrap;
 }
 
 .floating-navbar.scrolled {
   top: 14px;
-  background: rgba(8, 8, 8, 0.92);
-  border-color: rgba(177, 18, 38, 0.35);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.9), 0 0 25px rgba(139, 0, 0, 0.25);
-  padding: 6px 14px 6px 20px;
+  height: 50px;
+  background: rgba(8, 8, 10, 0.94);
+  border-color: rgba(177, 18, 38, 0.45);
+  box-shadow: 
+    0 1px 0 rgba(255, 26, 42, 0.25) inset,
+    0 20px 50px rgba(0, 0, 0, 0.95),
+    0 0 32px rgba(177, 18, 38, 0.28);
 }
 
+/* Brand Identity */
 .nav-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   font-family: var(--font-editorial);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: var(--white);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  user-select: none;
 }
 
+.brand-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.brand-surname {
+  color: var(--gray-light);
+  transition: color var(--trans-fast);
+}
+
+.nav-brand:hover .brand-surname {
+  color: var(--blood-red-bright);
+}
+
+/* Glowing Pulsing Neural Orb */
 .brand-orb {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: var(--blood-red-electric);
-  box-shadow: 0 0 8px var(--red-glow);
+  background: var(--blood-red-bright);
+  box-shadow: 0 0 10px var(--red-glow), 0 0 18px var(--blood-red-bright);
   position: relative;
+  flex-shrink: 0;
 }
 
 .brand-orb::after {
   content: '';
   position: absolute;
-  inset: -4px;
+  inset: -3.5px;
   border-radius: 50%;
-  border: 1px solid var(--blood-red-bright);
-  opacity: 0.6;
+  border: 1px solid rgba(255, 26, 42, 0.55);
+  animation: orbPulse 3s ease-in-out infinite;
 }
 
+@keyframes orbPulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.4); opacity: 0.15; }
+}
+
+/* Nav Links Track */
 .nav-links-list {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 .nav-item-link {
   font-family: var(--font-tech);
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   letter-spacing: 0.08em;
-  color: var(--gray);
-  padding: 8px 14px;
+  font-weight: 500;
+  color: #9ca3af;
+  padding: 6px 13px;
   border-radius: var(--radius-full);
   text-decoration: none;
-  transition: all var(--trans-fast);
+  transition: all 0.2s ease;
   position: relative;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-item-link:hover {
   color: var(--white);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .nav-item-link.active {
   color: var(--white);
-  background: var(--blood-red-subtle);
-  border: 1px solid rgba(177, 18, 38, 0.4);
-  box-shadow: 0 0 15px rgba(177, 18, 38, 0.2);
+  background: rgba(177, 18, 38, 0.2);
+  border-color: rgba(255, 26, 42, 0.45);
+  box-shadow: 0 0 14px rgba(255, 26, 42, 0.22);
+  font-weight: 600;
 }
 
+/* Executive CTA Button */
 .nav-cta-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-family: var(--font-tech);
-  font-size: 0.76rem;
-  letter-spacing: 0.05em;
+  font-size: 0.74rem;
+  letter-spacing: 0.07em;
   font-weight: 600;
-  padding: 8px 18px;
+  height: 38px;
+  padding: 0 18px;
   border-radius: var(--radius-full);
-  background: var(--blood-red);
+  background: linear-gradient(135deg, #b11226 0%, #850011 100%);
   color: var(--white);
-  border: 1px solid var(--blood-red-bright);
+  border: 1px solid rgba(255, 26, 42, 0.55);
   text-decoration: none;
-  transition: all var(--trans-fast);
-  box-shadow: 0 0 15px rgba(139, 0, 0, 0.35);
+  transition: all 0.25s ease;
+  box-shadow: 0 0 16px rgba(177, 18, 38, 0.35);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-cta-btn svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.2s ease;
 }
 
 .nav-cta-btn:hover {
-  background: var(--blood-red-bright);
-  border-color: var(--blood-red-electric);
-  box-shadow: 0 0 25px var(--red-glow);
+  background: linear-gradient(135deg, #d3162f 0%, #9e0014 100%);
+  border-color: #ff3344;
+  box-shadow: 0 0 24px rgba(255, 26, 42, 0.65);
   transform: translateY(-1px);
+  color: #ffffff;
+}
+
+.nav-cta-btn:hover svg {
+  transform: translateY(1.5px);
 }
 
 /* Mobile Toggle */
@@ -422,6 +487,7 @@ body {
   padding: 8px;
   flex-direction: column;
   gap: 5px;
+  cursor: pointer;
 }
 
 .mobile-nav-toggle span {

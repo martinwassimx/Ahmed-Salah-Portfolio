@@ -134,6 +134,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 l.classList.remove('active');
               }
             });
+            mobileNavLinks.forEach((l) => {
+              if (l.getAttribute('href') === `#${id}`) {
+                l.classList.add('active');
+              } else {
+                l.classList.remove('active');
+              }
+            });
           }
         });
       },

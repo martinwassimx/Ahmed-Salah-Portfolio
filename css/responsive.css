@@ -10,6 +10,22 @@
     --container-width: 1040px;
   }
 
+  .floating-navbar {
+    gap: 12px;
+    padding: 0 6px 0 16px;
+  }
+
+  .nav-item-link {
+    padding: 5px 9px;
+    font-size: 0.71rem;
+  }
+
+  .nav-cta-btn {
+    padding: 0 14px;
+    font-size: 0.71rem;
+    height: 36px;
+  }
+
   .hero-asymmetric-grid {
     gap: 40px;
   }
@@ -36,8 +52,9 @@
 @media (max-width: 992px) {
   .floating-navbar {
     width: calc(100% - 32px);
+    height: 52px;
     justify-content: space-between;
-    padding: 8px 16px;
+    padding: 0 16px;
   }
 
   .nav-links-list,
@@ -120,6 +137,13 @@
 
   body, a, button, input, textarea {
     cursor: auto !important;
+  }
+
+  .floating-navbar {
+    width: calc(100% - 24px);
+    top: 14px;
+    height: 48px;
+    padding: 0 14px;
   }
 
   .hero-scene {
