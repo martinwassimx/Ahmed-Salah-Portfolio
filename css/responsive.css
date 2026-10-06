@@ -1,0 +1,254 @@
+/* ==========================================================================
+   AHMED HESHAM SALAH — DEDICATED RESPONSIVE COMPOSITION
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01. LAPTOP & SMALL DESKTOP (max-width: 1200px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  :root {
+    --container-width: 1040px;
+  }
+
+  .hero-asymmetric-grid {
+    gap: 40px;
+  }
+
+  .neural-reactor-wrap {
+    width: 400px;
+    height: 400px;
+  }
+
+  .reactor-ring-outer {
+    width: 380px;
+    height: 380px;
+  }
+
+  .editorial-project-showcase {
+    gap: 40px;
+    padding: 36px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   02. TABLETS & MID SCREENS (max-width: 992px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .floating-navbar {
+    width: calc(100% - 32px);
+    justify-content: space-between;
+    padding: 8px 16px;
+  }
+
+  .nav-links-list,
+  .nav-cta-btn {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  /* Hero Stacking */
+  .hero-asymmetric-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .hero-visual-col {
+    order: -1;
+  }
+
+  .neural-reactor-wrap {
+    width: 360px;
+    height: 360px;
+  }
+
+  /* Metrics Grid */
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 24px;
+  }
+
+  .metric-item:nth-child(2)::after {
+    display: none;
+  }
+
+  /* About Editorial */
+  .about-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  /* Projects Showcase Stacking */
+  .editorial-project-showcase,
+  .editorial-project-showcase.reverse {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 32px;
+  }
+
+  .editorial-project-showcase.reverse .project-visual-side {
+    order: 0;
+  }
+
+  .editorial-project-showcase.reverse .project-info-side {
+    order: 1;
+  }
+
+  /* Contact Grid */
+  .contact-scene-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .contact-cinematic-wrap {
+    padding: 48px 32px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   03. MOBILE PHONES (max-width: 680px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 680px) {
+  /* Suppress desktop custom cursor on mobile */
+  .cursor-dot,
+  .cursor-ring,
+  .cursor-light-glow {
+    display: none !important;
+  }
+
+  body, a, button, input, textarea {
+    cursor: auto !important;
+  }
+
+  .hero-scene {
+    padding-top: calc(var(--header-height) + 40px);
+    padding-bottom: 60px;
+  }
+
+  .hero-container {
+    padding: 0 20px;
+  }
+
+  .hero-massive-headline {
+    font-size: 2.8rem;
+    line-height: 1.05;
+    margin-bottom: 24px;
+  }
+
+  .neural-reactor-wrap {
+    width: 290px;
+    height: 290px;
+  }
+
+  .reactor-ring-outer {
+    width: 280px;
+    height: 280px;
+  }
+
+  .reactor-ring-middle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .reactor-core-card {
+    width: 170px;
+    height: 220px;
+    padding: 10px;
+  }
+
+  .core-portrait-img {
+    height: 140px;
+  }
+
+  .satellite-hud-badge {
+    display: none;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .btn-cinematic {
+    width: 100%;
+    padding: 14px 20px;
+  }
+
+  /* Metrics Grid */
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .metric-item::after {
+    display: none !important;
+  }
+
+  /* Projects Section */
+  .editorial-project-showcase {
+    padding: 24px 18px;
+    gap: 24px;
+  }
+
+  .project-headline-title {
+    font-size: 1.7rem;
+  }
+
+  .project-action-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rag-interactive-pipeline-hud {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Timeline */
+  .cinematic-timeline-wrap {
+    padding-left: 36px;
+  }
+
+  .timeline-pulse-node {
+    left: -29px;
+  }
+
+  .timeline-entry-card {
+    padding: 20px 16px;
+  }
+
+  /* Constellation Canvas */
+  .constellation-wrapper {
+    padding: 20px 16px;
+  }
+
+  .constellation-canvas-container {
+    height: 400px;
+  }
+
+  .constellation-node-drawer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  /* Contact Wrap */
+  .contact-cinematic-wrap {
+    padding: 36px 20px;
+  }
+
+  /* Footer */
+  .footer-inner-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* Modals */
+  .cinematic-modal-window {
+    padding: 24px 18px;
+  }
+}
